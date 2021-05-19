@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+  <control namespace="Cos.CRM.PCFCOntrols" constructor="NotesTimeline" version="0.0.1" display-name-key="NotesTimeline" description-key="NotesTimeline description" control-type="standard" api-version="1.2.3">
+    <property name="CaseNumber" display-name-key="CaseNumber" description-key="CaseNumber" of-type="SingleLine.Text" usage="bound" required="true"/>
+    <resources>
+      <code path="bundle.js" order="1"/>
+      <css path="css/NotesTimeline.css" order="1"/>
+      <img path="images/card-text.svg"/>
+      <img path="images/check-square.svg"/>
+      <img path="images/journal-check.svg"/>
+    </resources>
+    <feature-usage>
+      <uses-feature name="Utility" required="true"/>
+      <uses-feature name="WebAPI" required="true"/>
+    </feature-usage>
+    <built-by name="pac" version="1.5.5"/>
+  </control>
+</manifest>

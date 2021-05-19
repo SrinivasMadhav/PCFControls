@@ -1,0 +1,139 @@
+.tree, .tree ul {
+    margin:0;
+    padding:0;
+    list-style:none
+}
+.tree ul {
+    margin-left:1em;
+    position:relative
+}
+.tree ul ul {
+    margin-left:.5em
+}
+.tree ul:before {
+    content:"";
+    display:block;
+    width:0;
+    position:absolute;
+    top:-15px;
+    bottom:0;
+    left:10px;
+    border-left:2px solid
+}
+.tree li {
+    margin:0;
+    padding:0 1em;
+    line-height:2em;
+    color:black;
+    font-weight:700;
+    position:relative;
+}
+.tree ul li:before {
+    content:"";
+    display:block;
+    width:15px;
+    height:0;
+    border-top:2px solid;
+    margin-top:-1px;
+    position:absolute;
+    top:2em;
+    left:10px;
+}
+
+.tree ul li:last-child:before {
+    background: rgb(200, 201, 204);
+    height:auto;
+    top:1em;
+    bottom:0
+}
+
+.indicator {
+    margin-right:5px;
+}
+.tree li a {
+    text-decoration: none;
+    color:#369;
+}
+.tree li button, .tree li button:active, .tree li button:focus {
+    text-decoration: none;
+    color:#369;
+    border:none;
+    background:transparent;
+    margin:0px 0px 0px 0px;
+    padding:0px 0px 0px 0px;
+    outline: 0;
+}
+.collapsible {
+    background-color: rgb(192, 214, 150);
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid 1px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 15px;
+    width:330px;
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color:  rgb(247, 240, 178);
+    color:black;
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+  }
+
+  .task {
+    background-color: rgb(216, 157, 139);
+    color:black;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: solid 1px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin: 15px;
+    width:400px;
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+  }
+
+  .ullist {
+    width: 330px;
+    text-align: left;
+  }
+  .mainbody {
+    background-color: rgb(200, 201, 204);
+    color:rgb(8,81,161);
+    width: 100%;
+    text-align: left;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+    
+  }
+  .header
+  {
+    width:100%;
+    color:rgb(12, 34, 238);
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+  }
+  .footer
+  {
+    width:100%;
+    color:rgb(12, 34, 238);
+    font-family: "Segoe UI" , "Segoe" , Tahoma, Helvetica, Arial, sans-serif;
+  }
+
+  
